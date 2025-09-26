@@ -1,0 +1,92 @@
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "cards"
+    "footer";
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 1200px                                                                                    ;
+  max-width: 100%;
+  margin: auto;
+  margin-right: auto;
+
+  padding: 2rem;
+  box-sizing: border-box;
+
+}
+.hero-buttons {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+header { grid-area: header; }
+.hero { grid-area: hero; text-align: center; }
+.content-cards { grid-area: cards; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+footer { grid-area: footer; text-align: center; }
+</style>
+
+<body>
+    
+    <header>
+      <h1>Josefina</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">UGC Content</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#" class="cart-icon">🛒</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- video banner-->
+  <main class="grid-container">
+    <section class="hero">
+      <button class="play-button">▶️</button>
+      <p class="microcopy-main">Vlogs auténticos. Contenido UGC que conecta. Historias que inspiran.</p>
+      <div class="hero-buttons">
+        <button>Watch Portfolio</button>
+        <button>Watch YouTube</button>
+      </div>
+    </section>
+                  <!--Cards-->
+    <section class="content-cards">
+      <article>
+        <img src="placeholder.jpg" alt="Video preview">
+        <div class="stars">★★★★★</div>
+        <h3>UGC para marca X</h3>
+        <p>Grabado con mi cámara y mucha pasión. Sin filtros, solo verdad.</p>
+      </article>
+      <article>
+        <img src="placeholder.jpg" alt="Video preview">
+        <div class="stars">★★★★★</div>
+        <h3>Un día como creadora</h3>
+        <p>Vlog íntimo mostrando mi proceso creativo y rutina diaria.</p>
+      </article>
+      <article>
+        <img src="placeholder.jpg" alt="Video preview">
+        <div class="stars">★★★★★</div>
+        <h3>Contenido que convierte</h3>
+        <p>UGC que conecta con audiencias reales y genera resultados.</p>
+      </article>
+    </section>
+  </main>
+    <footer>
+      <h2>Josefina</h2>
+      <div class="social-icons">
+        <!-- íconos de redes sociales -->
+      </div>
+      <form>
+        <label for="email">Your email address</label>
+        <input type="email" id="email" placeholder="you@example.com">
+        <button type="submit">Subscribe</button>
+        <p class="microcopy-footer">Prometo no hacer spam. Solo ideas, inspiración y novedades.</p>
+      </form>
+    </footer>
+</body>
