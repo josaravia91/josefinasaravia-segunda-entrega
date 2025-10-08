@@ -1,0 +1,12 @@
+subtitlecards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-cards {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}

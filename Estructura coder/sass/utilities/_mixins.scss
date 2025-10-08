@@ -1,0 +1,13 @@
+@mixin flex-center($gap: 1rem) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin responsive-img($ratio: 16 / 9) {
+  width: 100%;
+  aspect-ratio: $ratio;
+  object-fit: cover;
+  border-radius: $radius-md;
+}

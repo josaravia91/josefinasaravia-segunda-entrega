@@ -1,0 +1,22 @@
+.button-overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include flex-center(10rem);
+}
+
+.btn {
+  background-color: $color-btn;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: $radius-full;
+  font-weight: bold;
+  font-size: $font-size-base;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+}

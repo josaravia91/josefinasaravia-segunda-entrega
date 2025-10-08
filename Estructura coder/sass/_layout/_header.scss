@@ -1,0 +1,13 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background-color: #f7e8de;
+}
+
+.logo {
+  width: 10rem;
+  height: auto;
+  justify-self: start;
+}

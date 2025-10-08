@@ -1,0 +1,23 @@
+.hero {
+  grid-area: hero;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.button-overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1rem;
+    top: 60%;
+  }
+}

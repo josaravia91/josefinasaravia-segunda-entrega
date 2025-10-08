@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "subtitlecards"
+    "cards"
+    "footer";
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: clamp(320px, 90vw, 1200px);
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
